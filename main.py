@@ -13,10 +13,10 @@ if len(sys.argv) == 2:
     print("Tout ce passe en ligen de commande, voici commnent l'utiliser au mieux")
     print("Faire appel au script : python calculate.py MODE OP1 OP2")
     print("Les différentes possibilités pour les arguments")
-    print("MODE: + ou - ou * ou /")
+    print("MODE: + ou - ou x ou /")
     print("+: addition")
     print("-: soustraction")
-    print("*: multiplication")
+    print("x: multiplication")
     print("/: divission")
     print("Les arguments suivants OP1 et OP2")
     print("Ces deux, doivent etre des chiffre soit en int() soit en float()")
@@ -35,7 +35,7 @@ else:
   # 2. Vérifier les valeurs des arguments :
   # 2.a MODE : doit être compris entre + - * / 
   _, mode, op1, op2 = sys.argv
-  operateurs = ['+', '-', '*', '/']
+  operateurs = ['+', '-', 'x', '/']
   # 2.b OP1 : doit être soit un float() soit un int()
   # 2.c OP2 : doit être soit un float() soit un int()
   if '.' in op1:
@@ -62,7 +62,7 @@ else:
       # Afficher le résultat
       res = op1 - op2
       print(f"Résultat de la soustraction : {op1} {mode} {op2} = {res}")
-    elif mode == '*':
+    elif mode == 'x':
       # * : OP1 * OP2 
       # Afficher le résultat
       res = op1 * op2
