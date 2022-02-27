@@ -25,3 +25,9 @@ gérer : arguments incorrectes (envoi de str() au lieu de int()/float())
 gérer : mode incorrectes
 
 Faciliter avec un message d'aide suite a la demande : python ____.py aide
+
+## correction.py 
+
+- réécriture du script de calculatrice simple.
+- ajout du calcul de puissance
+- 
